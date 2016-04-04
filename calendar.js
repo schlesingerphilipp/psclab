@@ -1,4 +1,4 @@
-//Um eine Liste der Events anzuzeigen
+﻿//Um eine Liste der Events anzuzeigen
 //	Dieses Skript Tag:
 //	<script src="https://apis.google.com/js/client.js?onload=initCalendar" type="text/javascript"></script>
 // 	auf Seite einbinden wo Events angezeigt werden sollen.
@@ -38,7 +38,7 @@ function setCategories() {
 
 var initCalendar = function() { 
         setCategories();
-        gapi.client.setApiKey('AIzaSyC97W6E-2l4ApUOScZlKZ7J6fNJXQn_SCE');
+        gapi.client.setApiKey(API_KEY);
         gapi.client.load('calendar', 'v3').then(makeRequest);
       };
 var makeRequest = function() {
